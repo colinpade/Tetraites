@@ -3,10 +3,10 @@ angular.module('PictureApp', [])
   forecast.success(function(data) {
     $scope.album = data;
     $scope.aName = data.album.name;
-    $scope.mainImageURL = data.photos[0].url;
+    $scope.mainImage = data.photos[0];
 
-    $scope.changeMainImage = function(imageURL) {
-      $scope.mainImageURL = imageURL;
+    $scope.changeMainImage = function(image) {
+      $scope.mainImage = image;
     };
   });
 }])
