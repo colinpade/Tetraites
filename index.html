@@ -10,11 +10,15 @@
   <body ng-app="PictureApp">
     <div class="main" ng-controller="MainController">
       <div class="nav">
-          <ul>
-	    <li class="pull-left"><a href="#">Previous Arrow</a></li>
-	    <li><h1>{{ aName }}</h1></li>
-	    <li class="pull-right"><a href="#">Next Arrow</a></li>
-          </ul>
+        <div class="col-md-2">
+	  <h4>Previous Arrow</h4>
+	</div>
+        <div class="col-md-8">
+          <h1>{{ aName }}</h1>
+	</div>
+        <div class="col-md-2">
+	  <h4>Next Arrow</h4>
+	</div>
       </div>
       <div class="jumbotron">
         <img src="test_images/image1.jpg">

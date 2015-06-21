@@ -5,11 +5,7 @@
       gray, black);
 }
 
-.nav li {
-  display: inline;
-}
-
-.nav h1 {
+.nav .col-md-8 {
   color: white;
 }
 
