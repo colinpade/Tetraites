@@ -17,9 +17,7 @@
   border-color: gray;
 }
 
-.thumbnails {
-  background-color: black;
-  width: 150px;
+.col-md-2 .thumbnails {
   display: block;
   margin-left: auto;
   margin-right: auto;

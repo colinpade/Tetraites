@@ -6,6 +6,7 @@
 
     <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="script.js"></script>
+
   </head>
   <body ng-app="PictureApp">
     <div class="main" ng-controller="MainController">
@@ -22,10 +23,14 @@
       </div>
       <div class="jumbotron">
         <img src="test_images/image1.jpg">
+	<center><h3>_title_</h3></center>
+	<center><h4>Taken on _date_ in _location_</h4></center>
       </div>
-      <div class="album" ng-repeat="img in album.photos">
-        <div class="thumbnails">
-          <img ng-src="{{ img.thumb_url }}">
+      <div class="container">
+        <div ng-repeat="img in album.photos" class="col-md-2">
+          <div class="thumbnails">
+            <img ng-src="{{ img.thumb_url }}">
+          </div>
         </div>
       </div>
     </div>
