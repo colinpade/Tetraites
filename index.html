@@ -4,18 +4,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- AngularJS library 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script> -->
     <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
-    <script data-require="angular-animate@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+    <script src="script.js"></script>
   </head>
-  <body ng-app="MyApp">
+  <body ng-app="PictureApp">
   <div class="main" ng-controller="MainController">
     <div class="nav">
       <div class="container">
         <ul>
 	  <li class="pull-left"><a href="#">Previous Arrow</a></li>
-	  <li><h1>Title</h1></li>
+	  <li><h1>{{ aName }}</h1></li>
 	  <li class="pull-right"><a href="#">Next Arrow</a></li>
 	</ul>
       </div>
