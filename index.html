@@ -20,43 +20,16 @@
     </div>
     <div class="jumbotron">
       <div class="container">
-        <img src="images/image1.jpg">
+        <img src="test_images/image1.jpg">
       </div>
     </div>
-    <div class="thumbnails">
+    <div class="thumbnails" ng-repeat="img in album.photos">
       <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb1.jpg">
-	    </div>
-	  </div>
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb2.jpg">
-	    </div>
-	  </div>
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb3.jpg">
-	    </div>
-	  </div>
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb4.jpg">
-	    </div>
-	  </div>
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb5.jpg">
-	    </div>
-	  </div>
-          <div class="col-md-2">
-            <div class="thumbnail">
-	      <img src="images/thumb6.jpg">
-	    </div>
-	  </div>
-	</div>
+        <div class="col-md-2">
+          <div class="thumbnail">
+            <img ng-src="{{ img.thumb_url }}">
+          </div>
+        </div>
       </div>
     </div>
     </div>

@@ -1,8 +1,8 @@
 angular.module('PictureApp', [])
 .controller('MainController', ['$scope', 'forecast', function($scope, forecast){
   forecast.success(function(data) {
-    $scope.fiveDay = data;
-    $scope.aName = data.album.name;;
+    $scope.album = data;
+    $scope.aName = data.album.name;
   });
 }])
 .factory('forecast', ['$http', function($http) {

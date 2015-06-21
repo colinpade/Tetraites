@@ -18,3 +18,7 @@
   padding: 15px;
   padding-color:: white;
 }
+
+.thumbnails .row {
+  display: inline;
+}
