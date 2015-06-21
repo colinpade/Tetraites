@@ -8,31 +8,22 @@
     <script src="script.js"></script>
   </head>
   <body ng-app="PictureApp">
-  <div class="main" ng-controller="MainController">
-    <div class="nav">
-      <div class="container">
-        <ul>
-	  <li class="pull-left"><a href="#">Previous Arrow</a></li>
-	  <li><h1>{{ aName }}</h1></li>
-	  <li class="pull-right"><a href="#">Next Arrow</a></li>
-	</ul>
+    <div class="main" ng-controller="MainController">
+      <div class="nav">
+          <ul>
+	    <li class="pull-left"><a href="#">Previous Arrow</a></li>
+	    <li><h1>{{ aName }}</h1></li>
+	    <li class="pull-right"><a href="#">Next Arrow</a></li>
+          </ul>
       </div>
-    </div>
-    <div class="jumbotron">
-      <div class="container">
+      <div class="jumbotron">
         <img src="test_images/image1.jpg">
       </div>
-    </div>
-    <div class="thumbnails" ng-repeat="img in album.photos">
-      <div class="container">
-        <div class="col-md-2">
-          <div class="thumbnail">
-            <img ng-src="{{ img.thumb_url }}">
-          </div>
+      <div class="album" ng-repeat="img in album.photos">
+        <div class="thumbnails">
+          <img ng-src="{{ img.thumb_url }}">
         </div>
       </div>
     </div>
-    </div>
-
   </body>
 </html>
