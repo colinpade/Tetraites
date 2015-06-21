@@ -22,14 +22,14 @@
 	</div>
       </div>
       <div class="jumbotron">
-        <img src="test_images/image1.jpg">
+	      <img ng-src="{{ mainImageURL }}" >
 	<center><h3>_title_</h3></center>
 	<center><h4>Taken on _date_ in _location_</h4></center>
       </div>
       <div class="container">
         <div ng-repeat="img in album.photos" class="col-md-2">
           <div class="thumbnails">
-            <img ng-src="{{ img.thumb_url }}">
+            <img ng-src="{{ img.thumb_url }}" ng-click="changeMainImage(img.url)">
           </div>
         </div>
       </div>
