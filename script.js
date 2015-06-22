@@ -1,6 +1,6 @@
 angular.module('PictureApp', [])
-.controller('MainController', ['$scope', 'forecast', function($scope, forecast){
-  forecast.success(function(data) {
+.controller('MainController', ['$scope', 'jsonGrab', function($scope, jsonGrab){
+  jsonGrab.success(function(data) {
     $scope.album = data;
     $scope.aName = data.album.name;
     $scope.mainImage = data.photos[0];
@@ -10,7 +10,7 @@ angular.module('PictureApp', [])
     };
   });
 }])
-.factory('forecast', ['$http', function($http) {
+.factory('jsonGrab', ['$http', function($http) {
   return $http.get('gallery_json.js')
     .success(function(data) {
       return data;
