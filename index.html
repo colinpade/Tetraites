@@ -21,7 +21,7 @@
 	</div>
       </div>
       <div class="jumbotron">
-	<img ng-src="{{ mainImage.url }}" >
+	<img ng-src="{{ mainImage.url }}">
 	<!-- XXX get rid of these centers Colin -->
 	<center><h3>{{ mainImage.title }}</h3></center>
 	<center><h4>Taken on {{ mainImage.date }} in {{ mainImage.location }}</h4></center>
@@ -29,7 +29,9 @@
       <div class="container">
         <div ng-repeat="img in album.photos" class="col-md-2">
           <div class="thumbnails">
-            <img ng-src="{{ img.thumb_url }}" ng-click="changeMainImage(img)">
+            <div class={{selected}}>
+              <img ng-src="{{ img.thumb_url }}" ng-click="changeMainImage(img)">
+            </div>
           </div>
         </div>
       </div>

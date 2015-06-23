@@ -28,3 +28,7 @@
   border: 4px solid white;
   margin: 10px;
 }
+
+.selected {
+  background-color: red;
+}

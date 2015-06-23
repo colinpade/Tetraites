@@ -7,6 +7,12 @@ angular.module('PictureApp', [])
 
     $scope.changeMainImage = function(image) {
       $scope.mainImage = image;
+      console.log("show", arguments, this);
+      if ($scope.lastSelected) {
+        $scope.lastSelected.selected = '';
+      }
+      this.selected = 'selected';
+      $scope.lastSelected = this;
     };
   });
 }])
