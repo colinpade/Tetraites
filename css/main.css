@@ -1,5 +1,5 @@
-.main {
-/*  height: 80px; */
+.nav {
+  height: 80px; 
   background-image:
     linear-gradient(
       gray, black);
@@ -7,18 +7,48 @@
 
 .nav .col-md-8 {
   color: white;
+  text-align: center;
 }
 
+.jumbotron {
+  border-style: solid;
+  border-width: 0px;
+  border-color: black;
+  padding-top:20px;padding-bottom:20px;margin-bottom:0px;
+  background-color: rgb(210,210,210);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
 .jumbotron img {
   display: block;
   margin: auto;
   border-style: solid;
   border-width: 5px;
-  border-color: gray;
+  border-color: white;
+}
+
+.jumbotron h3 {
+  text-align: center;
+  color: black;
+}
+
+.jumbotron h4 {
+  text-align: center;
+  color: gray;
+}
+
+.album {
+  height: 150px;
+  background-image:
+    linear-gradient(rgb(117,119,124),rgb(91,98,108));
+  padding: 20px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(210,210,210);
 }
 
 .col-md-2 .thumbnails {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   float: left;
@@ -26,7 +56,6 @@
 
 .thumbnails img {
   border: 4px solid white;
-  margin: 10px;
 }
 
 .selected {

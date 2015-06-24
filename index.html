@@ -25,11 +25,10 @@
       </div>
       <div class="jumbotron">
 	<img ng-src="{{ mainImage.url }}">
-	<!-- XXX get rid of these centers Colin -->
-	<center><h3>{{ mainImage.title }}</h3></center>
-	<center><h4>Taken on {{ mainImage.date }} in {{ mainImage.location }}</h4></center>
+	<h3>{{ mainImage.title }}</h3>
+	<h4>Taken on {{ mainImage.date }} in {{ mainImage.location }}</h4>
       </div>
-      <div class="container">
+      <div class="album">
         <div ng-repeat="img in album.photos" class="col-md-2">
           <div class="thumbnails">
             <div class={{selected}}>
