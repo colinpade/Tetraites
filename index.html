@@ -29,8 +29,8 @@
 	<h4>Taken on {{ mainImage.date }} in {{ mainImage.location }}</h4>
       </div>
       <div class="album">
-        <div ng-repeat="img in album.photos" class="col-md-2">
-          <div class="thumbnails">
+        <div class="thumbnails">
+          <div ng-repeat="img in album.photos">
             <div class={{selected}}>
               <img ng-src="{{ img.thumb_url }}" ng-click="changeMainImage(img)">
             </div>

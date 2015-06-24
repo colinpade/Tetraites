@@ -48,16 +48,19 @@
   border-top-color: rgb(210,210,210);
 }
 
-.col-md-2 .thumbnails {
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
+.thumbnails {
+  padding-left: 20%;
 }
 
-.thumbnails img {
+.album div {
+  display:inline-block;
+}
+
+.album img {
   border: 4px solid white;
+  margin: 15px;
 }
 
-.selected {
-  background-color: rgb(166,225,246);
+.album .selected img{
+  border: 4px solid rgb(166,225,246);
 }
