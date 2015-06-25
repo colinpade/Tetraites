@@ -5,8 +5,9 @@
     <meta content="utf-8" http-equiv="encoding">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" media="screen and (min-width: 360px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/tablet.css" /> 
+    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="css/main.css" />
     <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="script.js"></script>
   </head>
@@ -14,9 +15,9 @@
     <div class="main" ng-controller="MainController">
       <div class="nav">
 	<ul>
-	  <li><h4><button ng-click="">Previous Arrow</button></h4></li>
+	  <li><h4 class="leftbutton"><button ng-click="">Previous Arrow</button></h4></li>
 	  <li><h1>{{ aName }}</h1></li>
-	  <li><h4><button ng-click="next()">Next Arrow</button></h4></li>
+	  <li><h4 class="rightbutton"><button ng-click="next()">Next Arrow</button></h4></li>
 	</ul>
       </div>
       <div class="jumbotron">

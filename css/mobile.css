@@ -7,13 +7,13 @@
 
 .nav li {
   display: inline-block;
+  position: relative;
+  left: -20px;
 }
 
 .nav h1 {
   color: white;
   text-align: center;
-  padding-right: 30%;
-  padding-left: 30%;
 }
 
 .jumbotron {
@@ -21,7 +21,8 @@
   border-width: 0px;
   border-color: black;
   padding-top:20px;padding-bottom:20px;margin-bottom:0px;
-  background-color: rgb(210,210,210);
+  /*background-color: rgb(210,210,210);*/
+  background-color: purple;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: black;
@@ -49,14 +50,14 @@
   height: 150px;
   background-image:
     linear-gradient(rgb(117,119,124),rgb(91,98,108));
-  padding: 20px;
+  padding: 5px;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: rgb(210,210,210);
 }
 
 .thumbnails {
-  padding-left: 20%;
+  padding-left: 0%;
 }
 
 .album div {
@@ -65,7 +66,7 @@
 
 .album img {
   border: 4px solid white;
-  margin: 15px;
+  margin: 5px;
 }
 
 .album .selected img{
