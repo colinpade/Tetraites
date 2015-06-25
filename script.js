@@ -15,17 +15,16 @@ angular.module('PictureApp', [])
       $scope.lastSelected = this;
     };
 
-    $scope.nextImage = function() {
-      $num = parseInt($scope.mainImage.id)+1;
-      $scope.mainImage = data.photos[$num];
-    };
-
-    $scope.previousImage = function() {
-      //This is broken
-      console.log("number before subtract", $scope.mainImage.id);
-      $num = parseInt($scope.mainImage.id)-1;
-      console.log("number after subtract", $num);
-      $scope.mainImage = data.photos[$num];
+    $scope.next = function() {
+      console.log("$scope.mainImage.id", $scope.mainImage.id);
+      console.log("data.photos.length -1", data.photos.length - 1);
+      console.log("$scope.mainImage.id", $scope.mainImage.id);
+      console.log("$scope.mainImage.id++", $scope.mainImage.id++);
+      if ( $scope.mainImage.id < data.photos.length-1 ) {
+        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)+1];
+      } else {
+        $scope.mainImage = data.photos[0];
+      }
     };
   });
 }])
