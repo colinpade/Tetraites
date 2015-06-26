@@ -11,9 +11,9 @@
     <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="script.js"></script>
   </head>
-  <body ng-app="PictureApp">
-    <div class="main" ng-controller="MainController">
-      <div class="nav">
+  <body ng-app="PictureApp" ng-controller="MainController" ng-keydown="keyPress($event)">
+    <div class="main">
+      <div class="nav" ng-keydown="keyPress($event)">
 	<ul>
 	  <li><h4 class="leftbutton"><button ng-click="previous()">Previous Arrow</button></h4></li>
 	  <li><h1>{{ aName }}</h1></li>

@@ -30,6 +30,13 @@ angular.module('PictureApp', [])
         $scope.mainImage = data.photos[parseInt($scope.mainImage.id)-2];
       }
     };
+    $scope.keyPress = function(eventNew) {
+      if (eventNew.keyCode===39) {
+        $scope.next();
+      } else if (eventNew.keyCode===37) {
+        $scope.previous();
+      }
+    };
   });
 }])
 .factory('jsonGrab', ['$http', function($http) {
