@@ -16,6 +16,7 @@ angular.module('PictureApp', [])
     };
 
     $scope.next = function() {
+      //how does this add one?
       if ( $scope.mainImage.id < data.photos.length ) {
         $scope.mainImage = data.photos[parseInt($scope.mainImage.id)];
       } else {
@@ -23,17 +24,11 @@ angular.module('PictureApp', [])
       }
     };
     $scope.previous = function() {
-      console.log("before");
-      console.log("$scope.mainImage.id", $scope.mainImage.id);
-      console.log("data.photos.length", data.photos.length);
-      console.log("addition: ", parseInt($scope.mainImage.id)+1);
-      if ( $scope.mainImage.id < data.photos.length ) {
-        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)];
+      if ( parseInt($scope.mainImage.id) == 1 ) {
+        $scope.mainImage = data.photos[5];
       } else {
-        $scope.mainImage = data.photos[0];
+        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)-2];
       }
-      console.log("after");
-      console.log("$scope.mainImage.id", $scope.mainImage.id);
     };
   });
 }])
