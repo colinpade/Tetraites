@@ -16,15 +16,24 @@ angular.module('PictureApp', [])
     };
 
     $scope.next = function() {
-      console.log("$scope.mainImage.id", $scope.mainImage.id);
-      console.log("data.photos.length -1", data.photos.length - 1);
-      console.log("$scope.mainImage.id", $scope.mainImage.id);
-      console.log("$scope.mainImage.id++", $scope.mainImage.id++);
-      if ( $scope.mainImage.id < data.photos.length-1 ) {
-        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)+1];
+      if ( $scope.mainImage.id < data.photos.length ) {
+        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)];
       } else {
         $scope.mainImage = data.photos[0];
       }
+    };
+    $scope.previous = function() {
+      console.log("before");
+      console.log("$scope.mainImage.id", $scope.mainImage.id);
+      console.log("data.photos.length", data.photos.length);
+      console.log("addition: ", parseInt($scope.mainImage.id)+1);
+      if ( $scope.mainImage.id < data.photos.length ) {
+        $scope.mainImage = data.photos[parseInt($scope.mainImage.id)];
+      } else {
+        $scope.mainImage = data.photos[0];
+      }
+      console.log("after");
+      console.log("$scope.mainImage.id", $scope.mainImage.id);
     };
   });
 }])
