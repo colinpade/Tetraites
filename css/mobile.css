@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.leftbutton img {
+  width: 60px;
+}
+
 .jumbotron {
   border-style: solid;
   border-width: 0px;

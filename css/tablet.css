@@ -12,8 +12,10 @@
 .nav h1 {
   color: white;
   text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
+}
+
+.leftbutton img {
+  width: 60px;
 }
 
 .jumbotron {
