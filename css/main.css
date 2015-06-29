@@ -3,17 +3,21 @@
   background-image:
     linear-gradient(
       gray, black);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .nav li {
   display: inline-block;
 }
 
+.nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .nav h1 {
   color: white;
-  text-align: center;
 }
 
 .leftbutton img {
