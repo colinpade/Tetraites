@@ -3,6 +3,9 @@
   "version": "0.1.4",
   "description": "Sample photo album",
   "main": "index.html",
+  "scripts": {
+    "start": "node -v"
+  },
   "dependencies": {
     "ejs": "^2.3.1",
   },
