@@ -1,0 +1,20 @@
+{
+  "name": "Tetraites",
+  "version": "0.1.4",
+  "description": "Sample photo album",
+  "main": "index.html",
+  "dependencies": {
+    "ejs": "^2.3.1",
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinsauce/Tetraites"
+  },
+  "keywords": [
+    "heroku",
+  ],
+  "license": "MIT"
+}
